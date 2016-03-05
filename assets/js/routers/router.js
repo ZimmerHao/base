@@ -5,8 +5,11 @@ define(['backbone', 'views/app'],
     var AppRouter = Backbone.Router.extend({
 
         routes: {
-            // "douban/books/:id" : "bookDetail",
-            // "douban/books/" : "bookList"
+            "/news/sources" : "getNewsSources"
+        },
+
+        getNewsSources: function() {
+            alert("ok");
         },
 
         initialize: function() {
