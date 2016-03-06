@@ -5,15 +5,20 @@ define(['backbone', 'views/app'],
     var AppRouter = Backbone.Router.extend({
 
         routes: {
-            "/news/sources" : "getNewsSources"
-        },
-
-        getNewsSources: function() {
-            alert("ok");
+            "index" : "index",
+            "news/sources": "showNewsSources"
         },
 
         initialize: function() {
-            // this.appView = new AppView();
+            this.appView = new AppView();
+        },
+
+        index: function() {
+            this.appView.index();
+        },
+
+        showNewsSources: function() {
+            this.appView.showNewsSources();
         }
     });
     return AppRouter;

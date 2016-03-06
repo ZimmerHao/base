@@ -33,15 +33,6 @@ define(['jquery',
             this.newsSourceSection.show();
         },
 
-        showBookItem: function(bookItem) {
-            var view = new BookSummaryView({model: bookItem});
-            this.bookList.append(view.render().el);
-        },
-
-        showBookList: function() {
-            BookSummarys.each(this.showBookItem, this);
-        },
-
         render: function() {
             if (BookSummarys.length) {
                 this.main.show();

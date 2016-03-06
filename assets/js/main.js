@@ -31,10 +31,8 @@ require.config({
 
 require([
 	'backbone',
-	'routers/router',
-	'bootstrap'
+	'routers/router'
 ], function (Backbone, AppRouter) {
-	/*jshint nonew:false*/
 	// Initialize routing and start Backbone.history()
 	var router = new AppRouter();
 	Backbone.history.start();
