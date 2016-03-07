@@ -2,7 +2,7 @@ define(['jquery',
         'underscore',
         'backbone',
         'views/news-source-app'
-], function($, _, Backbone, NewsSourceApp) {
+], function($, _, Backbone, NewsSourceAppView) {
 
     'use strict';
 
@@ -18,7 +18,7 @@ define(['jquery',
         },
 
         showNewsSource: function() {
-            var NewsSourceApp = new NewsSourceApp();
+            var NewsSourceApp = new NewsSourceAppView();
         },
 
         render: function() {

@@ -5,7 +5,7 @@ define(['backbone', 'models/news-source'], function(Backbone, NewsSource) {
 
         model: NewsSource,
 
-        url: "/news/sources"
+        url: "http://192.168.31.101:5000/news/sources"
     });
 
     return new NewsSources();

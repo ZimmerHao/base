@@ -3,7 +3,7 @@ define(['jquery',
         'backbone',
         'collections/news-sources',
         'views/news-source'
-], function($, _, Backbone,AppRouter, NewsSources, NewsSourceView) {
+], function($, _, Backbone, AppRouter, NewsSources, NewsSourceView) {
 
     'use strict';
 
