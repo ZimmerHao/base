@@ -1,24 +1,24 @@
 define(['backbone', 'views/app'],
-    function(Backbone) {
+    function(Backbone, AppView) {
    'use strict';
 
     var AppRouter = Backbone.Router.extend({
 
         routes: {
-            "index" : "index",
-            "news/sources": "showNewsSources"
+            "index" : "showIndex",
+            "news/sources": "showNewsSource"
         },
 
         initialize: function() {
             this.appView = new AppView();
         },
 
-        index: function() {
+        showIndex: function() {
             this.appView.index();
         },
 
-        showNewsSources: function() {
-            this.appView.showNewsSources();
+        showNewsSource: function() {
+            this.appView.showNewsSource();
         }
     });
     return AppRouter;

@@ -1,48 +1,49 @@
 define(['jquery',
         'underscore',
         'backbone',
-        'collections/news-sources',
-        'views/book'
-], function($, _, Backbone, NewsSources, BookSummaryView) {
+        'text!templates/news-source-template.hbs'
+], function($, _, Backbone, NewsSourceTemplate) {
 
     'use strict';
 
-    var AppView = Backbone.View.extend({
-        el: $("#main"),
+    var NewsSourceView = Backbone.View.extend({
+        tagName: "tr",
 
-        bookList: $("#book-list"),
+        template: _.template(NewsSourceTemplate),
+
+        events: {
+            "click a.edit" : "edit",
+            "click a.delete": "clear",
+            "click a.save": "save",
+            "click a.cancel": "cancel"
+        },
 
         initialize: function () {
-            this.indexSection = $("#index-section");
-            this.newsSourceSection = $("#news-source-section");
-            //this.listenTo(BookSummarys, 'reset', this.render);
-            //this.listenTo(BookSummarys, 'reset', this.showBookList);
+            this.listenTo(this.model, 'change', this.render);
+            this.listenTo(this.model, 'destroy', this.remove);
+        },
 
-            this.main = $("#main");
-            BookSummarys.fetch({reset:true});
+        edit: function() {
+            $(this.el);
+        },
+
+        clear: function() {
+            this.model.destroy();
+        },
+
+        save: function() {
 
         },
 
-        index: function() {
-            this.indexSection.show();
-        },
+        cancel: function() {
 
-        showNewsSources: function() {
-            var newsSources = new NewsSources();
-            newsSources.fetch();
-            this.newsSourceSection.show();
         },
 
         render: function() {
-            if (BookSummarys.length) {
-                this.main.show();
-                this.showBookList();
-            } else {
-                this.main.hide();
-            }
-
+            this.$el.html(this.template(this.model.toJSON()));
+            return this;
         }
     });
 
-    return AppView;
+    return NewsSourceView;
 });

@@ -8,5 +8,5 @@ define(['backbone', 'models/news-source'], function(Backbone, NewsSource) {
         url: "/news/sources"
     });
 
-    return NewsSources;
+    return new NewsSources();
 });

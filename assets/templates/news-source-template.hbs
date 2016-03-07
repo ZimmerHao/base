@@ -1,0 +1,22 @@
+    <td data-id=<%=id%>><%=name%></td>
+    <td><%=website%></td>
+    <td>
+        <%if(typeof newsAgent !== 'undefined'){%>
+            <%=newsAgent%>
+        <%}else{%>
+            <%=name%>
+        <%}%>
+    </td>
+    <td>
+        <%if(typeof rank !== 'undefined'){%>
+            <%=rank%>
+        <%}else{%>
+            -1
+        <%}%>
+    </td>
+    <td>
+        <a href="javascript:;" class="btn btn-outline btn-circle btn-sm purple edit"><i class="fa fa-edit"></i>修改 </a>
+    </td>
+    <td>
+        <a href="javascript:;" class="btn btn-outline btn-circle dark btn-sm black delete"><i class="fa fa-delete"></i> 删除 </a>
+    </td>
