@@ -1,7 +1,7 @@
 define(['jquery',
         'underscore',
         'backbone',
-        'text!templates/news-source-template.hbs'
+        'text!../../templates/news-source-template.hbs'
 ], function($, _, Backbone, NewsSourceTemplate) {
 
     'use strict';
