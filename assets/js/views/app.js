@@ -1,7 +1,7 @@
 define(['jquery',
         'underscore',
         'backbone',
-        'views/news-resource-app'
+        'views/news-source-app'
 ], function($, _, Backbone, NewsSourceApp) {
 
     'use strict';
