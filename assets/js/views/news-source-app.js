@@ -15,13 +15,13 @@ define(['jquery',
             this.listenTo(NewsSources, 'reset', this.addAll);
             this.listenTo(NewsSources, 'all', this.render);
 
-            this.main = $('#news-source-section>tbody');
+            this.main = $('#news-source-section').find('tbody');
             NewsSources.fetch({reset:true});
         },
 
         render: function() {
             if (NewsSources.length) {
-                this.el.show();
+                $('#news-source-section').removeClass('hidden');
             }
         },
 
