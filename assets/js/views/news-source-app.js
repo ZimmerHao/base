@@ -10,6 +10,10 @@ define(['jquery',
     var NewsSourceAppView = Backbone.View.extend({
         el: $('#news-source-section'),
 
+        events: {
+            "click #news_source_new": "showNewItem"
+        },
+
         initialize: function () {
             this.listenTo(NewsSources, 'add', this.addOne);
             this.listenTo(NewsSources, 'reset', this.addAll);
@@ -32,6 +36,10 @@ define(['jquery',
 
         addAll: function() {
             NewsSources.each(this.addOne, this);
+        },
+
+        showNewItem: function() {
+
         }
 
     });

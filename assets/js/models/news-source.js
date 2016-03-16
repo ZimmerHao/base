@@ -3,7 +3,7 @@ define(['underscore', 'backbone'], function(_, Backbone) {
 
     var NewsSource = Backbone.Model.extend({
 
-        urlRoot: '/news/source',
+        urlRoot: '/v1.0/news_',
 
         defaults: function() {
             return {

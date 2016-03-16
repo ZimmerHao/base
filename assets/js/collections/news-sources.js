@@ -5,7 +5,7 @@ define(['backbone', 'models/news-source'], function(Backbone, NewsSource) {
 
         model: NewsSource,
 
-        url: "/news/sources",
+        url: "/v1.0/news_sources",
 
         parse: function(response) {
             return response.new_sources;

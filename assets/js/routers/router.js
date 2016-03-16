@@ -6,7 +6,7 @@ define(['backbone', 'views/app'],
 
         routes: {
             "index" : "showIndex",
-            "news/sources": "showNewsSource"
+            "news_sources": "showNewsSource"
         },
 
         initialize: function() {
