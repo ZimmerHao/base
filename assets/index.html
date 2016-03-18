@@ -524,18 +524,60 @@
                             <table class="table table-striped table-hover table-bordered" id="news_source" role="grid" aria-describedby="news_source_info">
                                 <thead>
                                     <tr role="row">
-                                        <th class="sorting_asc" tabindex="0" aria-controls="news_source" rowspan="1" colspan="1" aria-sort="ascending" style="width: 137px;"> 新闻来源名字 </th>
-                                        <th class="sorting" tabindex="0" aria-controls="news_source" rowspan="1" colspan="1" style="width: 154px;"> 新闻来源官网 </th>
-                                        <th class="sorting" tabindex="0" aria-controls="news_source" rowspan="1" colspan="1" style="width: 123px;"> 新闻媒体机构名称 </th>
-                                        <th class="sorting" tabindex="0" aria-controls="news_source" rowspan="1" colspan="1" style="width: 100px;"> 媒体等级 </th>
-                                        <th class="sorting" tabindex="0" aria-controls="news_source" rowspan="1" colspan="1" aria-label=" Edit : activate to sort column ascending" style="width: 68px;"> 修改 </th>
-                                        <th class="sorting" tabindex="0" aria-controls="news_source" rowspan="1" colspan="1" aria-label=" Delete : activate to sort column ascending" style="width: 97px;"> 删除 </th>
+                                        <th style="width: 137px;"> 新闻来源名字 </th>
+                                        <th style="width: 154px;"> 新闻来源官网 </th>
+                                        <th style="width: 123px;"> 新闻媒体机构名称 </th>
+                                        <th style="width: 100px;"> 媒体等级 </th>
+                                        <th style="width: 68px;"> 修改 </th>
+                                        <th style="width: 97px;"> 删除 </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                    <div class="modal fade" role="basic" aria-hidden="true" style="display: none; padding-left: 0px;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                    <h4 class="modal-title">添加新闻来源</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>新闻来源</h4>
+                                            <div class="col-md-12 margin-class" style="padding-left:0;">
+                                                <div class="input-group select2-bootstrap-prepend">
+                                                    <div class="input-group-btn">
+                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 来源
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                    </div>
+                                                    <select id="news-source-addons-single-input-group" class="form-control j-news-source-data select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                                    </select>
+                                                    <span class="select2 select2-container select2-container--bootstrap select2-container--below" dir="ltr">
+                                                        <span class="selection">
+                                                        </span>
+                                                        <span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top:80px;">
+                                                <label>官网</label><input type="text" class="col-md-12 form-control" name="news-title"> </div>
+                                            <div style="margin-top:50px;">
+                                                <label>媒体</label><input type="text" class="col-md-12 form-control" name="news-link"> </div>
+                                            <div style="margin-top:50px;">
+                                                <label>媒体等级</label><input class="form-control form-control-inline input-medium news-date" size="16" type="text" value="" placeholder="yyyy/mm/dd HH:MM:SS"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn default" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn blue">保存</button>
+                                </div>
+                             </div>
+                         </div>
                     </div>
                     <!-- END PAGE BASE CONTENT -->
                 </div>

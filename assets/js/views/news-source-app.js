@@ -11,7 +11,7 @@ define(['jquery',
         el: $('#news-source-section'),
 
         events: {
-            "click #news_source_new": "showNewItem"
+            "click #news_source_new": "showNewsSourceModal"
         },
 
         initialize: function () {
@@ -38,8 +38,8 @@ define(['jquery',
             NewsSources.each(this.addOne, this);
         },
 
-        showNewItem: function() {
-
+        showNewsSourceModal: function() {
+            $('#news-source-section .modal').show();
         }
 
     });
