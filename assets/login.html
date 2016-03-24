@@ -37,15 +37,15 @@ License: You must have a valid license purchased only from themeforest(the above
 
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../bower_components/select2/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="../bower_components/select2-bootstrap-theme/dist/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="../assets/build/css/global/components.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="../assets/build/css/global/plugins.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN PAGE LEVEL STYLES -->
-        <link href="../assets/pages/css/login-2.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/build/css/global/login.css" rel="stylesheet" type="text/css" />
         <!-- END PAGE LEVEL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
         <!-- END THEME LAYOUT STYLES -->
@@ -56,7 +56,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN LOGO -->
         <div class="logo">
             <a href="index.html">
-                <img src="../assets/pages/img/logo-big-white.png" style="height: 17px;" alt="" /> </a>
+                <img src="../assets/images/logo-big-white.png" style="height: 17px;" alt="" /> </a>
         </div>
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->
@@ -89,23 +89,6 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="pull-right forget-password-block">
                         <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
                     </div>
-                </div>
-                <div class="login-options">
-                    <h4 class="pull-left">Or login with</h4>
-                    <ul class="social-icons pull-right">
-                        <li>
-                            <a class="social-icon-color facebook" data-original-title="facebook" href="javascript:;"></a>
-                        </li>
-                        <li>
-                            <a class="social-icon-color twitter" data-original-title="Twitter" href="javascript:;"></a>
-                        </li>
-                        <li>
-                            <a class="social-icon-color googleplus" data-original-title="Goole Plus" href="javascript:;"></a>
-                        </li>
-                        <li>
-                            <a class="social-icon-color linkedin" data-original-title="Linkedin" href="javascript:;"></a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="create-account">
                     <p>
@@ -417,29 +400,27 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="copyright hide"> 2014 © Metronic. Admin Dashboard Template. </div>
         <!-- END LOGIN -->
         <!--[if lt IE 9]>
-<script src="../assets/global/plugins/respond.min.js"></script>
-<script src="../assets/global/plugins/excanvas.min.js"></script>
 <![endif]-->
         <!-- BEGIN CORE PLUGINS -->
-        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../bower_components/js-cookie/src/js.cookie.js" type="text/javascript"></script>
+        <script src="../bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="../bower_components/slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../bower_components/blockui/jquery.blockUI.js" type="text/javascript"></script>
+        <script src="../bower_components/jquery.uniform/jquery.uniform.min.js" type="text/javascript"></script>
+        <script src="../bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js" type="text/javascript"></script>
         <!-- END CORE PLUGINS -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <script src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
-        <script src="../assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+        <script src="../bower_components/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="../bower_components/jquery-validation/dist/additional-methods.min.js" type="text/javascript"></script>
+        <script src="../bower_components/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
-        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <script src="../assets/build/js/global/app.min.js" type="text/javascript"></script>
         <!-- END THEME GLOBAL SCRIPTS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
-        <script src="../assets/pages/scripts/login.min.js" type="text/javascript"></script>
+        <script src="../assets/build/js/global/login.min.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME LAYOUT SCRIPTS -->
         <!-- END THEME LAYOUT SCRIPTS -->
